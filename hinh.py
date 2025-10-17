@@ -17,4 +17,4 @@ class HinhVuong(HinhChuNhat):
     def xuat_thong_tin(self):
         print("Hình vuông")
         print(f"Cạnh: {self.canh}")
-        print(f"Hình chữ nhật: {self.tinh_chu_vi}, Diện tích: {self.tinh_dien_tich}")
+        print(f"Hình chữ nhật: {self.tinh_chu_vi()}, Diện tích: {self.tinh_dien_tich()}")
