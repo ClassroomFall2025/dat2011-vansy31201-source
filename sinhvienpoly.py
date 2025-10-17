@@ -5,12 +5,12 @@ class SinhVienPoLy:
         self.__nganh_hoc = nganh_hoc
 
     # tinh điểm
-    def get_diem(self): # tại sao lại tạo get điểm mà cho pass
+    def get_diem(self): # Tạo get_diem để so sánh trong get_hoc_luc
         pass
 
     # xếp học lực
     def get_hoc_luc(self):
-        if self.get_diem() >= 9 and self.get_diem <= 10:
+        if self.get_diem() >= 9 and self.get_diem() <= 10:
             hoc_luc = "Xuất sắc"
         elif self.get_diem() >= 8:
             hoc_luc = "Giỏi"
@@ -29,9 +29,11 @@ class SinhVienPoLy:
         return f"họ và tên: {self.__ho_ten}, ngành: {self.__nganh_hoc}, học lực: {self.get_diem()}, {self.get_hoc_luc()}"
 
     # hàm xuất thông tin
-    def xuat(self):
-        return f"họ và tên: {self.__ho_ten}, ngành: {self.__nganh_hoc}, học lực: {self.get_diem()}, {self.get_hoc_luc()}"
+    # def xuat(self):
+    #     print(f"họ và tên: {self.__ho_ten}, ngành: {self.__nganh_hoc}, học lực: {self.get_diem()}, {self.get_hoc_luc()}")
 
+    def xuat(self):
+        print(f"{self.__ho_ten:^20}|{self.__nganh_hoc:^15}|{self.get_diem():^6.1f}|{self.get_hoc_luc():^15}")
     
 class SinhVienIT(SinhVienPoLy):
         def __init__(self, ho_ten, nganh_hoc, diem_html, diem_java, diem_css):
@@ -43,6 +45,7 @@ class SinhVienIT(SinhVienPoLy):
         def get_diem(self):
             return (self.__diem_java * 2 + self.__diem_html + self.__diem_css) / 4
         
+        
 class SinhVienBiz(SinhVienPoLy):
     def __init__(self, ho_ten, nganh_hoc, diem_marketting, diem_sales):
         super().__init__(ho_ten, nganh_hoc)
@@ -51,3 +54,4 @@ class SinhVienBiz(SinhVienPoLy):
 
     def get_diem(self):
         return (self.__diem_marketting * 2 + self.__diem_sales) / 3
+    
