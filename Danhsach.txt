@@ -1,0 +1,11 @@
+=======DANH SÁCH NHÂN VIÊN HÀNH CHÍNH=======
+   Họ và tên    |  Mã nhân viên   |    Thu nhập    
+      Sy        |       111       |      11111     
+
+============================DANH SÁCH NHÂN VIÊN TIẾP THỊ============================
+   Họ và tên    |   Mã nhân viên    |    Thu nhập     |  Doanh số  | Tỉ lệ hoa hồng 
+      An        |        222        |      22232      |     23     |      0.02      
+
+==================DANH SÁCH NHÂN VIÊN TRƯỞNG PHÒNG==================
+   Họ và tên    | Mã nhân viên |    Thu nhập     | Lương trách nhiệm
+    Hoài An     |     333      |      23233      |     3     
